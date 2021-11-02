@@ -1,0 +1,1 @@
+/home/mingzhe/anaconda3/envs/sequencing_python2/bin/cuffmerge -g ../00ref/UCSC_hg19_chr19_gene_annotation.gtf -s ../00ref/chr19.fa assembly.txt
