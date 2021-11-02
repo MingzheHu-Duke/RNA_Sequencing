@@ -1,0 +1,80 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --runThreadN 6 --runMode genomeGenerate --genomeDir 03STAR_genome --genomeFastaFiles 00ref/chr19.fa --sjdbGTFfile 00ref/UCSC_hg19_chr19_gene_annotation.gtf
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    6     ~RE-DEFINED
+runMode                       genomeGenerate        ~RE-DEFINED
+genomeDir                     03STAR_genome     ~RE-DEFINED
+genomeFastaFiles              00ref/chr19.fa        ~RE-DEFINED
+sjdbGTFfile                   00ref/UCSC_hg19_chr19_gene_annotation.gtf     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        6
+genomeDir                         03STAR_genome
+genomeFastaFiles                  00ref/chr19.fa   
+sjdbGTFfile                       00ref/UCSC_hg19_chr19_gene_annotation.gtf
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate      --runThreadN 6   --genomeDir 03STAR_genome   --genomeFastaFiles 00ref/chr19.fa      --sjdbGTFfile 00ref/UCSC_hg19_chr19_gene_annotation.gtf
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory exists and will be overwritten: 03STAR_genome/
+Nov 01 21:28:38 ... starting to generate Genome files
+00ref/chr19.fa : chr # 0  "chr19" chrStart: 0
+Chromosome sequence lengths: 
+chr19	59128983
+Genome sequence total length = 59128983
+Genome size with padding = 59244544
+Nov 01 21:28:39 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=00ref/UCSC_hg19_chr19_gene_annotation.gtf, found:
+		2633 transcripts
+		21210 exons (non-collapsed)
+		11745 collapsed junctions
+Total junctions: 11745
+Nov 01 21:28:39 ..... finished GTF processing
+
+!!!!! WARNING: --genomeSAindexNbases 14 is too large for the genome size=59128983, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 11
+Estimated genome size with padding and SJs: total=genome+SJ=260244544 = 59244544 + 201000000
+GstrandBit=32
+Number of SA indices: 111617966
+Nov 01 21:28:39 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 6;   chunks size limit: 178588744 bytes
+Nov 01 21:28:39 ... sorting Suffix Array chunks and saving them to disk...
+Writing 12340352 bytes into 03STAR_genome//SA_5 ; empty space on disk = 910985662464 bytes ... done
+Writing 176780880 bytes into 03STAR_genome//SA_0 ; empty space on disk = 910973267968 bytes ... done
+Writing 178051224 bytes into 03STAR_genome//SA_4 ; empty space on disk = 910796484608 bytes ...Writing 174737904 bytes into 03STAR_genome//SA_1 ; empty space on disk = 910618431488 bytes ... done
+Writing 176131680 bytes into 03STAR_genome//SA_3 ; empty space on disk = 910443692032 bytes ... done
+ done
+Writing 174901688 bytes into 03STAR_genome//SA_2 ; empty space on disk = 910267559936 bytes ... done
+Nov 01 21:28:52 ... loading chunks from disk, packing SA...
+Nov 01 21:28:53 ... finished generating suffix array
+Nov 01 21:28:53 ... generating Suffix Array index
+Nov 01 21:29:09 ... completed Suffix Array index
+Nov 01 21:29:09   Finished preparing junctions
+Nov 01 21:29:09 ..... inserting junctions into the genome indices
+Nov 01 21:29:10   Finished SA search: number of new junctions=11745, old junctions=0
+Nov 01 21:29:11   Finished sorting SA indicesL nInd=4698000
+Genome size with junctions=61605289  59244544   2360745
+GstrandBit1=32   GstrandBit=32
+Nov 01 21:29:12   Finished inserting junction indices
+Nov 01 21:29:20   Finished SAi
+Nov 01 21:29:20 ..... finished inserting junctions into genome
+Nov 01 21:29:20 ... writing Genome to disk ...
+Writing 61605289 bytes into 03STAR_genome//Genome ; empty space on disk = 910986194944 bytes ... done
+SA size in bytes: 479803363
+Nov 01 21:29:20 ... writing Suffix Array to disk ...
+Writing 479803363 bytes into 03STAR_genome//SA ; empty space on disk = 910924582912 bytes ... done
+Nov 01 21:29:20 ... writing SAindex to disk
+Writing 8 bytes into 03STAR_genome//SAindex ; empty space on disk = 910451490816 bytes ... done
+Writing 120 bytes into 03STAR_genome//SAindex ; empty space on disk = 910451490816 bytes ... done
+Writing 1565873491 bytes into 03STAR_genome//SAindex ; empty space on disk = 910451490816 bytes ... done
+Nov 01 21:29:21 ..... finished successfully
+DONE: Genome generation, EXITING

@@ -1,0 +1,19 @@
+### STAR   --runMode genomeGenerate      --runThreadN 6   --genomeDir 03STAR_genome   --genomeFastaFiles 00ref/chr19.fa      --sjdbGTFfile 00ref/UCSC_hg19_chr19_gene_annotation.gtf
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	00ref/chr19.fa 
+genomeSAindexNbases	14
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	00ref/UCSC_hg19_chr19_gene_annotation.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	61605289 479803363
