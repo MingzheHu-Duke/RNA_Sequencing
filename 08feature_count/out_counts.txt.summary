@@ -1,0 +1,15 @@
+Status	04align_out/adrenalAligned.sortedByCoord.out.bam	04align_out/brainAligned.sortedByCoord.out.bam
+Assigned	41124	32216
+Unassigned_Unmapped	0	0
+Unassigned_Read_Type	0	0
+Unassigned_Singleton	0	0
+Unassigned_MappingQuality	0	0
+Unassigned_Chimera	0	0
+Unassigned_FragmentLength	0	0
+Unassigned_Duplicate	0	0
+Unassigned_MultiMapping	1496	1127
+Unassigned_Secondary	0	0
+Unassigned_NonSplit	0	0
+Unassigned_NoFeatures	6200	3467
+Unassigned_Overlapping_Length	0	0
+Unassigned_Ambiguity	4	1
