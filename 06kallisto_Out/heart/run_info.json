@@ -1,0 +1,13 @@
+{
+	"n_targets": 2633,
+	"n_bootstraps": 0,
+	"n_processed": 37992,
+	"n_pseudoaligned": 33966,
+	"n_unique": 4469,
+	"p_pseudoaligned": 89.4,
+	"p_unique": 11.8,
+	"kallisto_version": "0.46.2",
+	"index_version": 10,
+	"start_time": "Tue Nov  2 00:06:58 2021",
+	"call": "kallisto quant -i 06kallisto/kallisto -o 06kallisto_Out/heart 01raw_data/brain_1.fastq 01raw_data/brain_2.fastq"
+}

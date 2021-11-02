@@ -1,0 +1,145 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --runThreadN 5 --genomeDir 03STAR_genome --readFilesIn 01raw_data/brain_1.fastq 01raw_data/brain_2.fastq --outFileNamePrefix 04align_out/brain --outSAMtype BAM SortedByCoordinate --outBAMsortingThreadN 5 --quantMode TranscriptomeSAM GeneCounts
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 04align_out/brain
+###### All USER parameters from Command Line:
+runThreadN                    5     ~RE-DEFINED
+genomeDir                     03STAR_genome     ~RE-DEFINED
+readFilesIn                   01raw_data/brain_1.fastq   01raw_data/brain_2.fastq        ~RE-DEFINED
+outFileNamePrefix             04align_out/brain     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+outBAMsortingThreadN          5     ~RE-DEFINED
+quantMode                     TranscriptomeSAM   GeneCounts        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        5
+genomeDir                         03STAR_genome
+readFilesIn                       01raw_data/brain_1.fastq   01raw_data/brain_2.fastq   
+outFileNamePrefix                 04align_out/brain
+outSAMtype                        BAM   SortedByCoordinate   
+outBAMsortingThreadN              5
+quantMode                         TranscriptomeSAM   GeneCounts   
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 5   --genomeDir 03STAR_genome   --readFilesIn 01raw_data/brain_1.fastq   01raw_data/brain_2.fastq      --outFileNamePrefix 04align_out/brain   --outSAMtype BAM   SortedByCoordinate      --outBAMsortingThreadN 5   --quantMode TranscriptomeSAM   GeneCounts   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --runThreadN 6   --genomeDir 03STAR_genome   --genomeFastaFiles 00ref/chr19.fa      --sjdbGTFfile 00ref/UCSC_hg19_chr19_gene_annotation.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              00ref/chr19.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   00ref/UCSC_hg19_chr19_gene_annotation.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               61605289   479803363        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	chr19	59128983	0
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Mon Nov  1 21:56:18 2021
+
+Genome: size given as a parameter = 61605289
+SA: size given as a parameter = 479803363
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=61605289;  nSAbyte=479803363
+GstrandBit=32   SA number of indices=116315966
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 61605289 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 61605289 bytes
+SA file size: 479803363 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 479803363 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Mon Nov  1 21:56:22 2021
+
+Processing splice junctions database sjdbN=11745,   pGe.sjdbOverhang=100 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Loaded transcript database, nTr=2633
+Loaded exon database, nEx=21210
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #3
+Completed: thread #4
+Completed: thread #0
+BAM sorting: 73622 mapped reads
+BAM sorting bins genomic start loci:
+1	0	3019448
+2	0	3052928
+3	0	3053083
+4	0	3053148
+5	0	3053249
+6	0	3053377
+7	0	3053489
+8	0	3053515
+9	0	3053538
+10	0	3053581
+11	0	3053680
+12	0	3053712
+13	0	3053734
+14	0	3053803
+15	0	3053929
+16	0	3054025
+17	0	3054173
+18	0	3055663
+19	0	3055675
+20	0	3055707
+21	0	3056326
+22	0	3057690
+23	0	3061167
+24	0	3061181
+25	0	3061219
+26	0	3062173
+27	0	3116204
+28	0	3122017
+29	0	3123523
+30	0	3197592
+31	0	3209138
+32	0	3282223
+33	0	3294366
+34	0	3296086
+35	0	3296863
+36	0	3382463
+37	0	3449102
+38	0	3463016
+39	0	3464990
+40	0	3465232
+41	0	3465585
+42	0	3466198
+43	0	3466663
+44	0	3467475
+45	0	3468059
+46	0	3468785
+47	0	3490898
+48	0	3491158
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Nov 01 21:56:25 ..... started sorting BAM
+Max memory needed for sorting = 423171
+ALL DONE!

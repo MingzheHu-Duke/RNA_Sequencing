@@ -1,0 +1,13 @@
+{
+	"n_targets": 2633,
+	"n_bootstraps": 0,
+	"n_processed": 50121,
+	"n_pseudoaligned": 43339,
+	"n_unique": 6005,
+	"p_pseudoaligned": 86.5,
+	"p_unique": 12.0,
+	"kallisto_version": "0.46.2",
+	"index_version": 10,
+	"start_time": "Tue Nov  2 00:05:36 2021",
+	"call": "kallisto quant -i 06kallisto/kallisto -o 06kallisto_Out/adrenal 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq"
+}
