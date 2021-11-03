@@ -1,3 +1,24 @@
+! Read carefully before running the script
+The raw data and reference files should be uploaded into the 00ref folder and 01raw_data.
+├── 00ref
+│   ├── UCSC_hg19_chr19_gene_annotation.gtf
+│   └── chr19.fa
+├── 01raw_data
+│   ├── adrenal_1.fastq
+│   ├── adrenal_2.fastq
+│   ├── brain_1.fastq
+│   └── brain_2.fastq
+
+Intall the required packages first:
+>>conda install --file requirements.txt
+
+To Run the script create the folders and do sequencing next:
+>>bash create_dir.sh
+>>bash sequencing.sh
+
+
+File Structure:
+
 ../RNA_Sequencing/
 ├── 00ref
 │   ├── UCSC_hg19_chr19_gene_annotation.gtf
