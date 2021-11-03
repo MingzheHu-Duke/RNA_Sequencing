@@ -1,0 +1,400 @@
+    1  ls
+    2  mkdir bmi500
+    3  ls
+    4  cd /tmp
+    5  ls
+    6  sudo apt-get update
+    7  sudo apt-get install curl
+    8  curl -o https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+    9  curl -0 https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   10  ls
+   11  curl -0 https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   12  bash Anaconda3-2021.05-Linux-x86_64.sh
+   13  curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   14  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+   15  sudo curl -O https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   16  ls
+   17  sudo bash Anaconda3-2021.05-Linux-x86_64.sh
+   18  cd .
+   19  ·
+   20  ~
+   21  cd ~
+   22  cd ~/
+   23  nano ~/.bashrc
+   24  source ~/.bashrc
+   25  conda
+   26  . ~/.bashrc
+   27  conda
+   28  ls
+   29  cd /tmp
+   30  lls
+   31  ls
+   32  bash Anaconda3-2021.05-Linux-x86_64.sh
+   33  cd ..
+   34  ls
+   35  cd ~
+   36  ls
+   37  conda
+   38  cd anaconda3/
+   39  ls
+   40  cd bin
+   41  pwd
+   42  nano ~/.bashrc
+   43  source ~/.bashrc
+   44  cd ~
+   45  conda
+   46  conda config --add channels bioconda
+   47  conda -- add channels conda-forge
+   48  conda config --add channels conda-forge
+   49  conda create -n sequencing python=3.8
+   50  conda -h
+   51  conda activate sequencing
+   52  conda search fastqc
+   53  conda install fastqc
+   54  conda search STAR
+   55  conda install -c bioconda star
+   56  conda install tophat2
+   57  conda config --add channels bioinfo
+   58  conda install tophat2
+   59  conda install -c bioinfo tophat2
+   60  conda install -c bioconda tophat
+   61  which tophat
+   62  conda install -c bioconda htseq
+   63  sudo ls /mnt
+   64  ls
+   65  sudo cp /mnt/c/mingz/Downloads/DecisionTree.sav
+   66  sudo cp /mnt/c/mingz/Downloads/DecisionTree.sav ~
+   67  cp /mnt/c/mingz/Downloads/DecisionTree.sav ~
+   68  cp /mnt/c/mingz/Downloads/DecisionTree.sav /temp
+   69  cp /mnt/c/Users/mingz/Downloads/DecisionTree.sav /temp
+   70  cp /mnt/c/Users/mingz/Downloads/DecisionTree.sav ~
+   71  ls
+   72  cp /mnt/c/Users/mingz/Downloads/course.zip /bmi500
+   73  sudo cp /mnt/c/Users/mingz/Downloads/course.zip /bmi500
+   74  ls
+   75  cd bmi500/
+   76  ls
+   77  cp /mnt/c/Users/mingz/Downloads/course.zip bmi500
+   78  cd bmi 500
+   79  cd bmi500
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd bmi500
+   84  ls
+   85  cd bmi500
+   86  rm bmi500
+   87  ls
+   88  cd ..
+   89  cp /mnt/c/Users/mingz/Downloads/course.zip bmi500/course.zip
+   90  cd bmi500/
+   91  ls
+   92  cd ..
+   93  ls -a
+   94  apt-get install unzip
+   95  apt get-install unzip
+   96  suso apt-get install unzip
+   97  sudo apt-get install unzip
+   98  cd bmi500/
+   99  ls
+  100  unzip course.zip 
+  101  ls
+  102  tree bmi500
+  103  sudo apt install tree
+  104  tree bmi500
+  105  tree bmi500/
+  106  cd ..
+  107  tree bmi500/
+  108  mkdir course
+  109  ls
+  110  rm course
+  111  rm -r course
+  112  ls
+  113  cd bmi500/
+  114  ls
+  115  mkdir course
+  116  ls
+  117  rm * course/
+  118  rm !(course*) course/
+  119  rm !(course/) course/
+  120  ls
+  121  cd course/
+  122  ls
+  123  cd ..
+  124  cp /mnt/c/Users/mingz/Downloads/course.zip bmi500/course.zip
+  125  cd bmi500/
+  126  ls
+  127  unzip course.zip
+  128  ls
+  129  mv !(/course) /course
+  130  mv !(course/) course/
+  131  rm !(course/)
+  132  rm !(course/) course/
+  133  ls
+  134  cd xou
+  135  cd course/
+  136  ls
+  137  mkdir 00ref
+  138  ls
+  139  mv -t 00ref/ *.gtf *.fa
+  140  ls
+  141  ls 00ref/
+  142  mkdir 01raw_data
+  143  mv *.fastq 01raw_data/
+  144  ls
+  145  ls 01_raw
+  146  ls 01raw_data/
+  147  ls
+  148  rm course.zip 
+  149  mkdir documents
+  150  mv *.pdf documents/
+  151  ls
+  152  cd 01raw_data/
+  153  ls
+  154  fastqc adrenal_1.fastq 
+  155  ls
+  156  rm  adrenal_1_fastqc.zip
+  157  rm  adrenal_1_fastqc.html
+  158  ls
+  159  cd ..
+  160  ls
+  161  mkdir 02quality_control
+  162  ls
+  163  fastqc -o 02quality_control/ 01raw_data/*.fastq
+  164  ls
+  165  ls 02quality_control/
+  166  ls
+  167  mkdir 03STAR_genome
+  168  ls
+  169  ls 00ref/
+  170  STAR --runThreadN 6 
+  171  STAR --runThreadN 6 --runMode genomeGenerate --genomeDir 03STAR_genome --genomeFastaFiles 00ref/chr19.fa --sjdbGTFfile 00ref/UCSC_hg19_chr19_gene_annotation.gtf
+  172  ls
+  173  cd 03STAR_genome/
+  174  ls
+  175  cd ..
+  176  ls
+  177  ls 01raw_data/
+  178  mkdir 04align_out
+  179  l
+  180  ls
+  181  STAR --runThreadN 5 --genomeDir 03STAR_genome --readFilesIn 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq --outFileNamePrefix 04align_out/adrenal --outSAMtype BAM SortedByCoordinate --outBAMsortingThreadN 5 --quantMode TranscriptomeSAM GeneCounts
+  182  ls 04align_out/
+  183  less 04align_out/adrenalReadsPerGene.out.tab 
+  184  STAR --runThreadN 5 --genomeDir 03STAR_genome --readFilesIn 01raw_data/brain_1.fastq 01raw_data/brain_2.fastq --outFileNamePrefix 04align_out/brain --outSAMtype BAM SortedByCoordinate --outBAMsortingThreadN 5 --quantMode TranscriptomeSAM GeneCounts
+  185  ls 04align_out/
+  186  tree ../course/
+  187  conda install -c bioconda samtools
+  188  cd 04align_out/
+  189  ls
+  190  samtools view adrenalAligned.sortedByCoord.out.bam > adrenalAlignedSamView.txt
+  191  nano adrenalAlignedSamView.txt 
+  192  samtools view brainAligned.sortedByCoord.out.bam > brainAlignedSamView.txt
+  193  cd ..
+  194  ls
+  195  mkdir RSEM
+  196  ls
+  197  rmdir RSEM
+  198  ls
+  199  mkdir 05RSEM
+  200  ls
+  201  conda install -c bioconda rsem
+  202  rsem-prepare-reference --gtf 00ref/UCSC_hg19_chr19_gene_annotation.gtf 00ref/chr19.fa 05RSEM/mingzhe_rsem
+  203  mkdir 05RSEM_Out
+  204  rsem-calculate-expression --paired-end --no-bam-output --alignments -p 5 -q 04align_out/adrenalAligned.toTranscriptome.out.bam 05RSEM/mingzhe_rsem 05RSEM_Out/adrenal_rsem
+  205  rsem-calculate-expression --paired-end --no-bam-output --alignments -p 5 -q 04align_out/brainAligned.toTranscriptome.out.bam 05RSEM/mingzhe_rsem 05RSEM_Out/brain_rsem
+  206  ls 05RSEM/
+  207  ls 05RSEM_Out/
+  208  mkdir 06kallisto
+  209  conda install -c bioconda kallisto
+  210  kallisto index -i 06kallisto 05RSEM/mingzhe_rsem.transcripts.fa 
+  211  kallisto index -i kallisto -o 06kallisto/ 05RSEM/mingzhe_rsem.transcripts.fa 
+  212  kallisto index -i 06kallisto/kallisto 05RSEM/mingzhe_rsem.transcripts.fa 
+  213  ls
+  214  ls 06kallisto/
+  215  mkdir 06kallisto_Out
+  216  kallisto quant -i 06kallisto/kallisto -o 06kallisto_Out/adrenal 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq
+  217  kallisto quant -i 06kallisto/kallisto -o 06kallisto_Out/heart 01raw_data/heart_1.fastq 01raw_data/heart_2.fastq
+  218  kallisto quant -i 06kallisto/kallisto -o 06kallisto_Out/heart 01raw_data/brain_1.fastq 01raw_data/brain_2.fastq
+  219  ls 06kallisto_Out/
+  220  mkdir 07htseq
+  221  which htseq
+  222  conda install -c bioconda htseq
+  223  htseq-count -r pos -m union -f bam -s no -q 04align_out/adrenalAligned.sortedByCoord.out.bam > 07htseq/adrenal.htseq.out
+  224  htseq-count -r pos -m union -f bam -s no -q 04align_out/adrenalAligned.sortedByCoord.out.bam 00ref/UCSC_hg19_chr19_gene_annotation.gtf> 07htseq/adrenal.counts
+  225  STAR --runThreadN 5 --genomeDir 03STAR_genome --readFilesIn 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq --outFilenamePrefix 04align_out_Sam/adrenal
+  226  mkdir 04align_out_Sam
+  227  STAR --runThreadN 5 --genomeDir 03STAR_genome --readFilesIn 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq --outFileNamePrefix 04align_out_Sam/adrenal
+  228  STAR --runThreadN 5 --genomeDir 03STAR_genome --readFilesIn 01raw_data/brain_1.fastq 01raw_data/brain_2.fastq --outFileNamePrefix 04align_out_Sam/brain
+  229  htseq-count -r pos -m union -f bam -s no -q 04align_out_Sam/adrenalAligned.out.sam 00ref/UCSC_hg19_chr19_gene_annotation.gtf> 07htseq/adrenal.counts
+  230  htseq-count -r pos -m union -f bam -s no -q 04align_out_Sam/brainAligned.out.sam 00ref/UCSC_hg19_chr19_gene_annotation.gtf> 07htseq/brain.counts
+  231  ls 07htseq/
+  232  nano 07htseq/adrenal.htseq.out 
+  233  rm 07htseq/adrenal.htseq.out 
+  234  ls 07htseq/
+  235  nano 07htseq/adrenal.counts 
+  236  cd ..
+  237  ls
+  238  git clone https://github.com/MingzheHu-Duke/RNA_Sequencing.git
+  239  ls
+  240  cp -R course/* RNA_Sequencing/
+  241  tree RNA_Sequencing/
+  242  cd RNA_Sequencing/
+  243  git add .
+  244  conda activate sequencing
+  245  ls
+  246  git config --global user.name "MingzheHu-Duke"
+  247  git config --global user.email "mingzhehu511@gmail.com"
+  248  ls
+  249  cd bmi500/RNA_Sequencing/
+  250  ls
+  251  git add .
+  252  git init
+  253  git add .
+  254  git commit -m "first commit"
+  255  git push -u origin
+  256  git remote set-url origin https://github.com/MingzheHu-Duke/RNA_Sequencing.git
+  257  git push -u origin
+  258  git config http.postBuffer 5242800
+  259  git push -u origin
+  260  git config --global http.postBuffer 2000000000
+  261  git gc --aggressive
+  262  git push -u origin master
+  263  git push -u origin
+  264  nano .gitignore
+  265  git add .
+  266  git commit -m "ignore some large files"
+  267  git push -u origin
+  268  git rm 03STAR_genome/*
+  269  git add .
+  270  git commit -m "First commit"
+  271  git push -u origin
+  272  ls
+  273  git add .
+  274  git commit -m "new"
+  275  git pull
+  276  git push
+  277  ls
+  278  cd bmi500/
+  279  ls
+  280  cd RNA_Sequencing/
+  281  git add .
+  282  git commit -m "new"
+  283  git reset --hard HEAD^4
+  284  git reset --hard HEAD^3
+  285  git reset --hard HEAD~4
+  286  git reset --hard HEAD~3
+  287  git add .
+  288  git commit -m "Remove large files"
+  289  git push
+  290  ls
+  291  cd ..
+  292  cp -R course/* RNA_Sequencing/
+  293  cd RNA_Sequencing/
+  294  ls
+  295  rm 03STAR_genome/*
+  296  git add .
+  297  git commit -m "Removed Large Files"
+  298  git push -u origin
+  299  conda activate sequencing
+  300  ls
+  301  conda install -c bioconda subread
+  302  ls
+  303  mkdir 08feature_count
+  304  ls
+  305  featureCounts -p -a 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 08feature_count/out_counts.txt -T 6 -t exon gene_id 04align_out/*Aligned.sortedByCoord.out.bam
+  306  featureCounts -p -a 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 08feature_count/out_counts.txt -T 6 -t exon 04align_out/*Aligned.sortedByCoord.out.bam
+  307  featureCounts -p -a 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 08feature_count/out_counts.txt 04align_out/*Aligned.sortedByCoord.out.bam
+  308  nano 08feature_count/out_counts.txt
+  309  git add .
+  310  git commit -m "Add Feature counts"
+  311  git push
+  312  ls
+  313  mkdir 09deseq_out
+  314  ls
+  315  rsem-generate-data-matrix 05RSEM_Out/*genes.results > 05RSEM_Out/out_matrix
+  316  ls 05RSEM_Out/
+  317  git add .
+  318  git commit -m "Generate the gene data matrix"
+  319  git push
+  320  awk
+  321  nano 05RSEM_Out/out_matrix 
+  322  ls
+  323  ls 04align_out/
+  324  conda install -c cufflinks
+  325  conda install -c bioconda cufflinks
+  326  conda deactivate
+  327  ls
+  328  ls 03STAR_genome/
+  329  conda create --name sequencing_python2 python=2
+  330  conda activate sequencing_python2
+  331  conda install -c bioconda tophat
+  332  ls
+  333  mkdir 09tophat
+  334  ls
+  335  mv 09tophat 10tophat
+  336  ls
+  337  cd 10tophat/
+  338  mkdir Adrenal_tophat
+  339  mkdir Brain_tophat
+  340  cd ..
+  341  tophat -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 10tophat/Adrenal_tophat 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq 
+  342  tophat -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 10tophat/Adrenal_tophat 00ref/chr19.fa 01raw_data/adrenal_1.fastq 01raw_data/adrenal_2.fastq 
+  343  conda install -c bioconda cufflinks
+  344  cufflinks -o 09deseq_out 04align_out/adrenalAligned.sortedByCoord.out.bam 
+  345  cufflinks -o 09deseq_out 04align_out/adrenalAligned.toTranscriptome.out.bam 
+  346  cufflinks -o 09deseq_out 04align_out_Sam/adrenalAligned.out.sam 
+  347  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out 04align_out/adrenalAligned.sortedByCoord.out.bam
+  348  cd 09deseq_out/
+  349  ls
+  350  cd ..
+  351  nano 09deseq_out/genes.fpkm_tracking 
+  352  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out 04al_out/adrenalAligned.sortedBycord.out.bam
+  353  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out 04al_out/brainAligned.sortedBycord.out.bam
+  354  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out 04align_out/brainAligned.sortedBycord.out.bam
+  355  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out 04align_out/brainAligned.sortedByCoord.out.bam 
+  356  cd 09deseq_out/
+  357  ls
+  358  rm *
+  359  ls
+  360  mkdir brain
+  361  mkdir adre
+  362  rmdir adre
+  363  mkdir adrenal
+  364  cd  ..
+  365  ls
+  366  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out/brain 04align_out/brainAligned.sortedByCoord.out.bam 
+  367  cufflinks -G 00ref/UCSC_hg19_chr19_gene_annotation.gtf -o 09deseq_out/adrenal 04align_out/adrenalAligned.sortedByCoord.out.bam 
+  368  tree 09deseq_out/
+  369  rmdir 10tophat/
+  370  rm -r 10tophat/
+  371  cd 09deseq_out/
+  372  cat > assembly.txt brain/transcripts.gtf adrenal/transcripts.gtf 
+  373  ls
+  374  cuffmerge -g ../00ref/UCSC_hg19_chr19_gene_annotation.gtf -s ../00ref/chr19.fa assembly.txt 
+  375  cd ..
+  376  git add .
+  377  git commit -m "Cufflink error, lacking of files in provided google drive"
+  378  git push
+  379  tree ../RNA_Sequencing/
+  380  tree ../RNA_Sequencing/ > README.txt
+  381  git add .
+  382  git commit -m "Add readme folder structure included"
+  383  git push
+  384  cd ..
+  385  ls
+  386  mkdir scratch
+  387  ls
+  388  cd scratch
+  389  ls
+  390  bash create_directories.sh 
+  391  sudo bash create_directories.sh 
+  392  nano create_directories.sh 
+  393  sudo nano create_directories.sh 
+  394  rm create_directories.sh 
+  395  ls
+  396  sudo rm create_directories.sh 
+  397  ls
+  398  nano create_dir.sh
+  399  bash create_dir.sh 
+  400  history >>history.txt
